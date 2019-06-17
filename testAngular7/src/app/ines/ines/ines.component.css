@@ -1,0 +1,16 @@
+mat-card {
+    width: 100%;
+    margin-left: 15%;
+    text-align: center;
+    
+}
+.text {
+    color: red;
+    left: 80%;
+}
+p {
+    text-align: center;
+}
+img {
+    width: 60%;
+}

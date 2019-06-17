@@ -1,0 +1,5 @@
+mat-card {
+    border: 10px solid black;
+ position: absolute;
+ margin-top: -70%;
+}

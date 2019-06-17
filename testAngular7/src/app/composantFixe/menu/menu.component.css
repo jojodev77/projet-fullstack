@@ -1,0 +1,15 @@
+mat-toolbar {
+    border: 4px solid white;
+    background: linear-gradient(#e66465, #9198e5);
+}
+span {
+    margin-left: 4%;
+    letter-spacing: 0.2 px;
+}
+#boutonUser {
+display:none;
+color: red;
+font-family: arial;
+text-decoration: underline;
+background-color: azure;
+}

@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <ng-container *ngIf= "user == null; else use">  
+                <div id="boutonUser">
+                  <!--
+                    <div>
+                      <a [routerLink]="[{ outlets: { userRoute: ['connexion'] } }]">CONNEXION</a>
+                    </div>
+                   -->
+                <div>
+                     <a [routerLink]="[{ outlets: { userRoute: ['inscription'] } }]">INSCRIPTION</a>
+                </div>
+                </div>
+                  <span (click)="apparaitreBoutonUser()"><mat-icon>lock</mat-icon>QUI ES TU? </span>
+           
+          </ng-container>
+
+  <ng-template #use>
+                   
+        <span >BIENVENUE {{user?.name}}</span>
+              
+  </ng-template>
+
+
+              <span><a  routerLink="home/ines">Accueil</a></span>
+              <span><a routerLink="home/score">Score</a></span>
+              <span *ngIf="user != null"><a [routerLink]="[{ outlets: { validation: ['validation'] } }]">Validation mission</a></span>
+              <span *ngIf="user != null"><a [routerLink]="[{ outlets: { creationmission: ['creationmission'] } }]">Création de  mission</a></span>
+          </mat-toolbar-row>
+
+  
+</mat-toolbar>

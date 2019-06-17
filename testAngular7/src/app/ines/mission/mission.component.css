@@ -1,0 +1,22 @@
+mat-card {
+    width: 60%;
+    margin-left: 15%;
+    text-align: center;
+    
+}
+.text {
+    color: red;
+    left: 80%;
+}
+p {
+    text-align: center;
+}
+img {
+    width: 40%;
+}
+.cssobj {
+color: red;
+font-family: arial;
+text-decoration: underline;
+font-size: 2,4vw;
+}

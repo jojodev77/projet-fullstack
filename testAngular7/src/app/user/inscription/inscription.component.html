@@ -1,0 +1,27 @@
+
+<mat-card>
+    <h1>INSCRIPTION</h1>
+    <mat-icon>login</mat-icon>
+
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+   
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Ton nom?" formControlName="name" >
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Ta techno?"  formControlName="techno"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Ton service?"  formControlName="service"></textarea>
+        </mat-form-field>
+
+       
+     <div>
+        <button type="submit">TRANSMETTRE</button>
+     </div>
+  </form>
+
+</mat-card>
